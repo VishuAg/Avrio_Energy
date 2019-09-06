@@ -1,0 +1,27 @@
+
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    width:100%;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+.main_container{
+  background: white;
+  align:center;
+  margin-top:3%;
+  padding:5%;
+}
+p{
+  font-size: 20px;
+  margin-top:25%;
+}
+section.about{
+  margin:2%;
+}

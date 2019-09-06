@@ -1,0 +1,130 @@
+
+.form-control{
+  margin-top:5%;
+  margin-bottom:25px;
+  font-family: "Roboto", sans-serif;
+}
+
+#investor{
+  padding-top:2%;
+     width:80%;
+     background:#f5f5f0;
+     border-radius:2%;
+    padding-bottom:5px;
+    margin-bottom:10%;
+    margin-top:6%;
+}
+
+button.btn-primary{
+  margin-bottom:10px;
+  margin-left:40%;
+  padding:left:15px;
+  text-align:center;
+  width:150px
+}
+#contact{
+  padding-top:2%;
+width:80%;
+background-color:#f5f5f0;
+border-radius:2%;
+padding-bottom:5px;
+margin-bottom:10%;
+}
+label.input-group-text{
+  margin-bottom:15px;
+  margin-top:15px;
+  font-size:100%;
+  font-family: Roboto,sans-serif;
+}
+select.custom-select{
+  margin-bottom:15px;
+  margin-top:15px;
+
+  font-family: Roboto,sans-serif;
+}
+textarea.form-control{
+  margin-bottom:15px;
+  font-family: Roboto,sans-serif;
+}
+#Address{
+  padding-top:2%;
+width:80%;
+background-color:#f5f5f0;
+border-radius:2%;
+padding-bottom:5px;
+margin-bottom:10%;
+margin-top:5%;
+}
+h2 {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 10px 0 80px;
+}
+h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #1abc9c;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+
+}
+
+ .adr{
+   background-color: #f4f7f7;
+ }
+
+ .jumbotron{
+   background-color: #031610;
+   width: 800px;
+   margin-left: 0px;
+   align:left;
+ }
+ h1{
+   font-family: fantasy;
+   text-color:white;
+   margin-bottom: 5px;
+   margin-top: 25px;
+   font-size: 45px;
+ }
+ .cf{
+   font-family: monospace;
+   color:white;
+   margin-bottom: 5px;
+   margin-top: 25px;
+   font-size: 25px;
+ }
+.cfif{
+width: 525px;
+margin: 10px;
+
+}
+.ta{
+  rows:'3';
+}
+
+
+/* for map */
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+/* end for map */

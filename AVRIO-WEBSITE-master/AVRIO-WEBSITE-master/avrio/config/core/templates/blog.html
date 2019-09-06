@@ -1,0 +1,66 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<script>
+  $(".navbar").css("background", "linear-gradient(to right, #1abc9c 0%, #0f705d 100%)");
+</script>
+<link rel="stylesheet" href="{%static '/css/blog.css'%}">
+
+<div style="margin-top:90px">
+
+</div>
+
+
+<div class="body">
+
+<header class=" text-center">
+  <div class="container" id="heading">
+    <h2>My Blogs</h2>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    {% if access_records %}
+    {% for acc in access_records %}
+
+    <div class="row border-1 shadow-lg " id="blog_list">
+      <div class="col-lg-5 col-xl-4 ">
+        <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+          <img class="img-fluid" src="{{acc.url}}" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-7 col-xl-8 first">
+        <h3 class="font-weight-bold mb-3"><strong>{{acc.title}}</strong></h3>
+        <p>{{acc.paragraph}}</p>
+        <br>
+        <br>
+        <p class="text-muted" id="date">by <a>{{acc.author}}</a>,{{acc.date}}</p>
+        <p><a class="btn btn-primary btn-md" href="{{acc.id}}/"><span id="rm"><strong>Read more</strong></span></a>
+          <p>
+      </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p>No Access Records. Table Not Created.</p>
+    {% endif %}
+  </div>
+  </div>
+</section>
+
+
+<style type="text/css">
+  .body{
+    background: linear-gradient(100deg,
+#00FA9A, #00BFFF
+    );
+  }
+</style>
+
+{% endblock %}

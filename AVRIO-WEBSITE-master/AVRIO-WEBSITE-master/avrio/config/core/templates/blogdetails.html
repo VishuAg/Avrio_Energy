@@ -1,0 +1,61 @@
+<!-- Blog-details section -->
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<!-- CSS link -->
+
+<link rel="stylesheet" href="{%static '/css/blogdetails.css'%}">
+
+<div style="margin-top:130px">
+  <div class="container-fluid justify-content-center">
+    <div class="row">
+      <div class="col-lg-12" align='center'>
+        <img src="{{blog_details.url}}" alt="" class="img-responsive">
+      </div>
+    </div>
+    <div class="container-fluid justify-content-center border-0 shadow-lg" id="container_blog">
+      <h1 class="shadow-bg" align="center">{{blog_details.title}}</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card border-0">
+
+            <div class="card-body">
+              <h5 class="card-title">Author: {{blog_details.author}}</h5>
+
+              <div class="text-muted">
+                <p>Date: {{blog_details.date}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="blog_paragraph">
+        <div class="row">
+          <div class="col-lg-10">
+            <p>{{blog_details.paragraph}}</p>
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery for navbar -->
+
+    <script>
+      $(document).ready(function() {
+
+        $(".navbar").css("background", "linear-gradient(to right, #1abc9c 0%, #0f705d 100%)");// if not, change it back to transparent
+
+      });
+    </script>
+
+
+
+
+
+    {% endblock %}

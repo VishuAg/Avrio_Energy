@@ -1,0 +1,237 @@
+/* for carousel used above */
+.carousel-inner{
+  max-height:950px;
+  max-width:100%;
+
+}
+
+/* end for carousel */
+
+
+
+/* our main objective */
+#objective{
+  background: white;
+  align:center;
+  margin-top:2%;
+}
+a.btn-outline-info{
+  margin-left:50%;
+  margin-bottom:5%;
+}
+/* end for objective */
+
+
+/* for section */
+
+section {
+    padding: 60px 0;
+}
+
+
+
+/* end for section */
+/* style for marquee */
+.marquee {
+
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee span {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  left: 100%;
+  animation: marquee 11s linear infinite;
+}
+.marquee:hover span {
+  animation-play-state: paused;
+}
+
+.marquee span:nth-child(1) {
+  animation-delay: 0s;
+}
+.marquee span:nth-child(2) {
+  animation-delay: 1.3s;
+}
+.marquee span:nth-child(3) {
+  animation-delay: 2.5s;
+}
+.marquee span:nth-child(4) {
+  animation-delay: 3.8s;
+}
+.marquee span:nth-child(5) {
+  animation-delay: 5s;
+}
+
+@keyframes marquee {
+  0%   { left: 100%; }
+  100% { left: -100%; }
+}
+/* end for style in marquee */
+
+/* for any paragraph */
+p{
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+  }
+/* end of style for paragraph   */
+
+
+
+/* for mobile display */
+
+
+@media (max-width:767px) {
+.card-img-top{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+   width:50%;
+   height:auto;
+}
+}
+
+/* endof for mobile display */
+
+
+
+
+/* for caraousel used in testimonial */
+.carousel-caption {
+    top: 50%;
+    bottom: auto;
+}
+
+.carousel .testimonial {
+  padding: 30px 0 10px;
+}
+.carousel .overview {
+  font-style: italic;
+}
+.carousel .overview b {
+  text-transform: uppercase;
+  color: #1abc9c;
+}
+.carousel .item {
+  color: #999;
+  font-size: 14px;
+    text-align: center;
+  overflow: hidden;
+    min-height: 290px;
+}
+
+/* end of style for carousel used in testimonial */
+
+
+
+/* for h2 */
+  h2 {
+  	color: #333;
+  	text-align: center;
+  	text-transform: uppercase;
+  	font-family: "Roboto", sans-serif;
+  	font-weight: bold;
+  	position: relative;
+  	margin: 30px 0 60px;
+  }
+  h2::after {
+  	content: "";
+  	width: 100px;
+  	position: absolute;
+  	margin: 0 auto;
+  	height: 3px;
+  	background: #1abc9c;
+  	left: 0;
+  	right: 0;
+  	bottom: -10px;
+
+  }
+/* endfor h2 */
+
+
+/* for h3 */
+    h3 {
+    	color: #333;
+    	text-align: center;
+    	text-transform: uppercase;
+      font-size:2.25em;
+
+    	position: relative;
+    	margin: 30px 0 60px;
+    }
+  h3::after {
+  	content: "";
+  	width: 100px;
+  	position: absolute;
+  	margin: 0 auto;
+
+  	height: 3px;
+  	background: #1abc9c;
+  	left: 0;
+  	right: 0;
+  	bottom: -10px;
+  }
+
+/* endfor h3 */
+
+
+
+
+
+/
+
+/* for card hover effect */
+  .card:hover {
+    transform: scale(1.1,1.1);
+  }
+  .news{
+    height:450px;
+    padding:1%;
+  }
+h5.card-title{
+color:black;
+}
+p.card-text{
+    color:black;
+  }
+footer.blockquote-footer{
+  color:#5c5c3d;
+  position:absolute;
+  font-size:14px;
+  right:0;
+  bottom:0;
+  padding-right:10px;
+  padding-bottom:10px;
+}
+.news_container{
+  background:none;
+  padding:5px;
+  margin-bottom:1%;
+}
+.news_row{
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.button_news{
+  margin-bottom:1%;
+  margin-top:5%;
+}
+.motive{
+  font-size:28px;
+}
+
+.testimonial_image{
+  border-radius:50%;
+}
+.carousel-item{
+  text-align: center;
+}
+.testimonial_container{
+margin-top:5%;
+margin-bottom:5%;
+}

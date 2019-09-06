@@ -1,0 +1,126 @@
+
+/* for navbar */
+
+.navbar {min-height:90px !important;
+
+}
+
+a.nav-link{
+
+font-family: 'Nunito';
+
+font-size:24px;
+}
+
+.navbar-right{
+  font-family: 'Nunito', sans-serif;
+  color:white;
+  margin-right:20px;
+  font-size:24px;
+}
+.intro-title{
+  text-align:center;
+    font-weight: bold;
+}
+
+.dropdown-toggle{
+  color:white;
+  font-size:20px;
+  font-family:'Nunito', sans-serif;
+}
+.dropdown:hover{display: inline-block;}
+
+div.dropdown-menu{
+  background-color:#0f705d;
+}
+a.dropdown-item{
+  color:white;
+    font-size:20px;
+    font-family:'Nunito', sans-serif;
+}
+/* end for navbar */
+
+/* for mobile display change in styles */
+@media (max-width:767px) {
+  .navbar-nav {
+   background: #1abc9c;
+   border-radius:5%;
+ }
+.login2{
+   margin-left: 40%
+ }
+ #loginid{
+   margin-right:0%;
+ }
+}
+
+/* end of display change in mobile */
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+/* styles for social icons */
+.fa {
+  padding: 25px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* end of style for social icons */
+/* style for footer */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+footer.page-footer{
+  background-color: #1f1f14;
+  padding-top:0.25%;
+  width:100%;
+  margin:0;
+}
+.dark-grey-text{
+  color:white;
+}
+div.mt-4{
+  color:white;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+hr.teal{
+  width: 80px;
+}
+/* end of style for footer */

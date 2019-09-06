@@ -1,0 +1,46 @@
+from django.urls import path
+from . import views
+from django.conf.urls import url
+app_name='core'
+urlpatterns=[
+# url(r'^(?P<pk>\d+)/$',views.blogdetails.as_view(),name='detail'),
+ # path('blogdetails/', views.blogdetails.as_view(),name='blog_details'),
+    # path(r'^(?P<pk>\d+)/$',views.blogdetails.as_view(),name='blog_details'),
+    path('blog/<int:pk>/', views.blogdetails.as_view(),name='detail'),
+
+    path('',
+        views.index,
+        name='index'),
+    path('team/',
+        views.team,
+        name='team'),
+    path('Solutions/',
+        views.Solutions,
+        name='Solutions'),
+    path('SmartSol/',
+        views.SmartSol,
+        name='SmartSol'),
+
+        path('privacy/',
+            views.privacy,
+            name='privacy'),
+path('gallery/',
+    views.gallery,
+    name='gallery'),
+    path('blog/',
+        views.blog,
+        name='blog'),
+path('news/',
+    views.news,
+    name='news'),
+path('contact/',
+        views.contact,
+        name='contact'),
+    path('login/',
+        views.login,
+        name='login'),
+path('faq/',
+    views.faq,
+    name='faq'),
+    path('about_us/',views.aboutus,name='aboutus'),
+]

@@ -1,0 +1,57 @@
+<!-- News section -->
+{% extends "base_generic.html" %}
+{% block content %}
+{%load staticfiles %}
+<div style="margin-top:120px">
+<!-- CSS link -->
+  <link rel="stylesheet" href="{% static "/css/news.css" %}">
+  <section class="latest-post-area pb-120">
+    <div class="container no-padding ">
+      <div class="row">
+        <div class="col-lg-12 ">
+          <!-- Start latest-post Area -->
+
+          <h2>Latest News</h2>
+          {% if access_records %}
+
+          {% for acc in access_records %}
+          <a href="{{acc.link_url}}" target="_blank" class="btn btn-link">
+            <div class="card mb-4 border-0 shadow-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="{{acc.image_url}}" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{acc.title}}</h5>
+                    <p class="card-text">{{acc.paragraph}}</p>
+                    <p class="card-text date"><small class="text-muted">{{acc.date}}" "{{acc.source}}</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          {% endfor %}
+
+
+          {% else %}
+          <p>No Access Records. Table Not Created.</p>
+          {% endif %}
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Jquery for Navbar -->
+
+  </section>
+
+  <script>
+    $(document).ready(function() {
+
+      $(".navbar").css("background", "linear-gradient(to right, #1abc9c 0%, #0f705d 100%)"); // if not, change it back to transparent
+
+    });
+  </script>
+  {% endblock %}

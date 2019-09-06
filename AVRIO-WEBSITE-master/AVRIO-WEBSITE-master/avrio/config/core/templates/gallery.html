@@ -1,0 +1,263 @@
+<!-- Gallery section -->
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+<!--CSS link -->
+<link rel="stylesheet" href="{%static "/css/gallery.css"%}">
+
+<div style="margin-top:90px;">
+
+
+  <!-- jquery and bootstrap links  -->
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Ajax link -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+  <!-- Button Section -->
+
+
+<div class="body">
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center my-2">
+      </div>
+    </div>
+    <div class="portfolio-menu mt-2 mb-4">
+      <ul>
+        <li class="btn btn-outline-success active" id="automclick" data-filter=".all">All</li>
+        <li class="btn btn-outline-success" data-filter=".gts">Tab1</li>
+        <li class="btn btn-outline-success" data-filter=".lap">Tab2</li>
+        <li class="btn btn-outline-success text" data-filter=".selfie">Tab3</li>
+      </ul>
+    </div>
+
+    <!-- Tab2 about  gallegy section -->
+
+    <div class="portfolio-item row">
+      <div class="item lap col-lg-12 col-md-8 col-12 col-sm">
+        <div class="card text-center" style="background: linear-gradient(100deg,
+    #00FA9A, #00BFFF">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+      </div>
+
+<!-- Tab 2 image  section -->
+
+      <div class="item all lap col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all lap col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all lap col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all lap col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg" alt="">
+        </a>
+      </div>
+
+      <!-- tab1 about section -->
+
+      <div class="item gts col-lg-12 col-md-8 col-12 col-sm">
+        <div class="card text-center" style="background: linear-gradient(100deg,
+    #00FA9A, #00BFFF">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab1 image section -->
+
+      <div class="item all gts col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all gts col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all gts col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all gts col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all gts col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="item all gts col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all gts col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all gts col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all gts col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg" alt="">
+        </a>
+      </div>
+
+      <!-- tab3 about section -->
+
+      <div class="item selfie col-lg-12 col-md-8 col-12 col-sm">
+        <div class="card text-center" style="background: linear-gradient(100deg,
+    #00FA9A, #00BFFF">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab3 image section -->
+
+      <div class="item all selfie col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all selfie col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all selfie col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all selfie col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="item all selfie col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all selfie col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" alt="">
+        </a>
+      </div>
+      <div class="item all selfie col-lg-6 col-md-8 col-12 col-sm">
+        <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  .body{
+    background: linear-gradient(100deg,
+#00FA9A, #00BFFF
+    );
+  }
+</style>
+
+
+
+  <!-- jquery and javascript for colleps to tab1 tab2 tab3 section -->
+
+  <script type="text/javascript">
+    $('.portfolio-item').isotope({
+      itemSelector: '.item',
+      layoutMode: 'fitRows'
+    });
+    $('.portfolio-menu ul li').click(function() {
+      $('.portfolio-menu ul li').removeClass('active');
+      $(this).addClass('active');
+
+      var selector = $(this).attr('data-filter');
+      $('.portfolio-item').isotope({
+        filter: selector
+      });
+      return false;
+    });
+    $(document).ready(function() {
+      var popup_btn = $('.popup-btn');
+      popup_btn.magnificPopup({
+        type: 'image',
+        gallery: {
+          enabled: true
+        }
+      });
+    });
+
+    $(".navbar").css("background", "linear-gradient(to right, #1abc9c 0%, #0f705d 100%)");//jquery for navbar
+
+    jQuery(function() {
+      jQuery('#automclick').click();
+    });
+  </script>
+
+
+  {% endblock %}
